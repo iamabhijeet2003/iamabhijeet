@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Preloader from "./components/Pre"
+import Preloader from "./components/Pre";
 import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar";
 import './App.css';
 import './style.css'
 import {
@@ -27,7 +28,7 @@ function App() {
     <Router>
      <Preloader  load={load} /> 
       <div className="App">
-
+        <Navbar /> 
         <Routes>
           <Route path="/" element={<Home />} /> 
           <Route path="*" element={<Navigate to="/" />} />
