@@ -12,6 +12,7 @@ import {
   Navigate
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 
@@ -28,8 +29,9 @@ function App() {
   return (
     <Router>
      <Preloader  load={load} /> 
-      <div className="App">
-        <Navbar /> 
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Navbar />
+        <ScrollToTop /> 
         <Routes>
           <Route path="/" element={<Home />} /> 
           <Route path="*" element={<Navigate to="/" />} />
