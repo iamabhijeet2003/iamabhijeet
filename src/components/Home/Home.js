@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col} from "react-bootstrap";
 import Particle from "../Particle";
-
+import Type from "./Type";
 function Home(){
     return(
         <section>
@@ -21,6 +21,10 @@ function Home(){
                                 I'am
                                 <strong className="main-name"> Abhijeet Singh</strong>
                             </h1>
+                            
+                            <div style={{ padding: 50, textAlign: "left" }}>
+                                <Type />    
+                            </div>
                         </Col>
                     </Row>
                 </Container>
