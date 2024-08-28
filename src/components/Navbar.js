@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+import { CgGitFork, CgFileDocument } from "react-icons/cg";
 import {
     AiFillStar,
     AiOutlineHome,
@@ -9,7 +9,6 @@ import {
     AiOutlineUser,
   } from "react-icons/ai";
 import logo from "../Assets/logo.png";
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar(){
 
@@ -103,7 +102,7 @@ function NavBar(){
                         >
                             <CgGitFork style={{ fontSize: "1.2em"}} />
                             {" "}
-                            <AiFillStar style={{ fontSize: "1.2em"}} />
+                            <AiFillStar style={{ fontSize: "1.1em"}} />
                         </Button>
                        </Nav.Item> 
                        {/* Github Repository */}
