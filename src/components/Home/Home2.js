@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub, AiOutlineTwitter, AiOutlineMail  } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-
+import { FaLinkedinIn, FaReact, FaVuejs, FaNode, FaPhp     } from "react-icons/fa";
+import { IoLogoJavascript  } from "react-icons/io5";
 function Home2(){
     return(
         <Container fluid className="home-about-section" id="about">
@@ -20,7 +20,7 @@ function Home2(){
                             <br />
                             I am fluent in classics like
                             <i>
-                                <b className="purple"> PHP and Javascript. </b>
+                                <b className="purple"> PHP <FaPhp /> and Javascript <IoLogoJavascript />. </b>
                             </i>
                             <br />
                             <br />
@@ -37,7 +37,7 @@ function Home2(){
                             <br />
                             <br />
                             Whenever possible, I also apply my passion for developing products
-                            with <b className="purple">Node.js</b> and
+                            with <b className="purple">Node.js <FaNode  /></b> and
                             <i>
                                 <b className="purple">
                                 {" "}
@@ -46,7 +46,7 @@ function Home2(){
                             </i>
                             &nbsp; like
                             <i>
-                                <b className="purple"> React.js and Vuejs</b>
+                                <b className="purple"> React.js <FaReact /> and Vuejs <FaVuejs /></b>
                             </i>
                         </p>
                     </Col>
