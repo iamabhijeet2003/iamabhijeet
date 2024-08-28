@@ -1,36 +1,36 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter, AiOutlineMail  } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2(){
     return(
-        <Container>
+        <Container fluid className="home-about-section" id="about">
             <Container>
                 <Row>
-                    <Col>
-                        <h1>
-                            LET ME <span> INTRODUCE </span> MYSELF
+                    <Col md={8} className="home-about-description">
+                        <h1 style={{ fontSize: "2.6rem"}}>
+                            LET ME <span className="purple"> INTRODUCE </span> MYSELF
                         </h1>
 
-                        <p>
+                        <p className="home-about-body">
                             I fell in  love with programming and I have at least learnt
                             something, I think… 🤷‍♂️
                             <br />
                             <br />
                             I am fluent in classics like
                             <i>
-                                <b> PHP and Javascript. </b>
+                                <b className="purple"> PHP and Javascript. </b>
                             </i>
                             <br />
                             <br />
-                            My Field of Interest's are building new &nbsp;
+                            My Field of Interest's are building & learning new &nbsp;
                             <i>
-                                <b>
-                                    Web Technologies and Products
+                                <b className="purple">
+                                    Web Technologies and Products  {" "}
                                 </b>
                                 and also in areas related to {" "}
-                                <b>
+                                <b className="purple">
                                     Cybersecurity
                                 </b>
                             </i>
@@ -53,40 +53,49 @@ function Home2(){
                 </Row>
 
                 <Row>
-                    <Col>
+                    <Col md={12} className="home-about-social">
                         <h1>FIND ME ON</h1>
                         <p>
                             Feel free to <span className="purple">connect </span>with me
                         </p>
-                        <ul>
-                            <li>
+                        <ul className="home-about-social-links">
+                            <li className="social-icons">
                                 <a 
                                     href="https://github.com/iamabhijeet2003"
                                     target="_blank"
                                     rel="noreferrer"    
-
+                                    className="icon-colour  home-social-icons"
                                 >
                                     <AiFillGithub />
                                 </a>
                             </li>
-                            <li>
+                            <li className="social-icons">
                                 <a
                                     href="https://twitter.com/iamabhijeet2003"
                                     target="_blank"
                                     rel="noreferrer" 
+                                    className="icon-colour  home-social-icons"
                                 >
                                     <AiOutlineTwitter />
                                 </a>
                             </li>
                             <li className="social-icons">
-                            <a
-                                href="https://www.linkedin.com/in/iamabhijeet2003/"
-                                target="_blank"
-                                rel="noreferrer"
-                                
-                            >
-                            <FaLinkedinIn />
-                            </a>
+                                <a
+                                    href="https://www.linkedin.com/in/iamabhijeet2003/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="icon-colour  home-social-icons"
+                                >
+                                <FaLinkedinIn />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                    href="mailto:abhijeet3016@gmail.com"
+                                    className="icon-colour  home-social-icons"
+                                >
+                                <AiOutlineMail  />
+                                </a>
                             </li>
                         </ul>
                     </Col>
