@@ -4,6 +4,8 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects/Projects";
+import About from "./components/About/About";
+import Resume from "./components/Resume/Resume";
 import './App.css';
 import './style.css'
 import {
@@ -35,7 +37,9 @@ function App() {
         <ScrollToTop /> 
         <Routes>
           <Route path="/" element={<Home />} /> 
-          <Route path="/project" element={<Projects />} /> 
+          <Route path="/project" element={<Projects />} />
+          <Route path="/about" element={<About />} /> 
+          <Route path="/resume" element={<Resume />} /> 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
