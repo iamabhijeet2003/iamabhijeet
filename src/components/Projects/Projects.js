@@ -4,6 +4,7 @@ import ProjectCards from "./ProjectCards";
 import Particle from "../Particle";
 import Terminal from "../../Assets/projects/terminal.png";
 import tfg from "../../Assets/projects/tfg.png";
+import jsprojects from "../../Assets/projects/js-projs.png";
 function Projects(){
     return(
         <Container fluid className="project-section">
@@ -29,10 +30,10 @@ function Projects(){
                             }
                             description={
                                 <>
-                                An interactive terminal portfolio made with 
-                                <span className="purple text-decoration-underline">{" "}Vue 3</span>, 
-                                <span className="purple text-decoration-underline">{" "}Typescript </span>and 
-                                <span className="purple text-decoration-underline">{" "}Tailwind CSS</span>.
+                                An interactive terminal portfolio made with {" "}
+                                <span className="purple text-decoration-underline">Vue 3</span>, {" "}
+                                <span className="purple text-decoration-underline">Typescript </span>and {" "}
+                                <span className="purple text-decoration-underline">Tailwind CSS</span>.
                                 </>
                             }
                             ghLink="https://github.com/iamabhijeet2003/portfolio"
@@ -53,17 +54,40 @@ function Projects(){
                                 <>
                                 Bachelor's Degree Final Project (TFG). 
                                 Online Store made with {" "} 
-                                <span className="purple text-decoration-underline">Vue 3{" "}</span>, 
-                                <span className="purple text-decoration-underline">{" "}Javascript{" "} </span> and 
-                                <span className="purple text-decoration-underline">{" "}Tailwind CSS</span>.
-                                Backend Made with 
-                                <span className="purple text-decoration-underline">{" "}Symfony 6</span> and 
-                                <span className="purple text-decoration-underline">{" "}PHP 8.2</span>    . 
+                                <span className="purple text-decoration-underline">Vue 3</span>, {" "}
+                                <span className="purple text-decoration-underline">Javascript</span>{" "}  and{" "} 
+                                <span className="purple text-decoration-underline">Tailwind CSS</span>.
+                                Backend Made with {" "}
+                                <span className="purple text-decoration-underline">Symfony 6</span> and {" "}
+                                <span className="purple text-decoration-underline">PHP 8.2</span>    . 
                                 Use of Stripe API, SendGrid API, Unsplash API and Google Maps API for advance features.
                                 </> 
                             }
-                            ghLink="https://github.com/iamabhijeet2003/portfolio"
-                            demoLink="https://portfolio-iamabhijeet.vercel.app/"
+                            ghLink="https://github.com/iamabhijeet2003/frontend-TFG"
+                            demoLink="https://proyecto-final-abhi.vercel.app/"
+                        />
+                    </Col>
+
+                    <Col md={4} className="project-card">
+                        <ProjectCards
+                            imgPath={jsprojects}
+                            isBlog={false}
+                            title={
+                                <>
+                                <span className="text-decoration-underline">Javascript Projects</span>
+                                </>
+                            }
+                            description={
+                                <>
+                                Various projects made in {" "}
+                                <span className="purple text-decoration-underline">Javascript</span>{" "}
+                                 and Javascript based frameworks like {" "}
+                                 <span className="purple text-decoration-underline">VueJs</span>, {" "}
+                                 <span className="purple text-decoration-underline">ReactJs</span>. 
+                                </> 
+                            }
+                            ghLink="https://github.com/iamabhijeet2003/js-projects"
+                            demoLink="https://iamabhijeet2003.github.io/js-projects/"
                         />
                     </Col>
                 </Row>
