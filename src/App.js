@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Preloader from "./components/Pre";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import Projects from "./components/Projects/Projects";
 import './App.css';
 import './style.css'
 import {
@@ -34,6 +35,7 @@ function App() {
         <ScrollToTop /> 
         <Routes>
           <Route path="/" element={<Home />} /> 
+          <Route path="/project" element={<Projects />} /> 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
