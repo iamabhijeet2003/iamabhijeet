@@ -16,6 +16,7 @@ import {
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./components/ScrollToTop";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
      <Preloader  load={load} /> 
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
+        <Analytics />
         <ScrollToTop /> 
         <Routes>
           <Route path="/" element={<Home />} /> 
