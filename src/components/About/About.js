@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./TechStack";
 import Toolstack from "./ToolStack";
+import Github from "./Github";
 function About(){
     return(
         <Container fluid className="about-section">
@@ -30,6 +31,8 @@ function About(){
                 <strong className="purple">Tools</strong> I use
             </h1>
             <Toolstack />
+
+            
         </Container>
     )
 }
