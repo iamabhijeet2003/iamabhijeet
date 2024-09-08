@@ -1,15 +1,29 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
+import Techstack from "./TechStack";
 function About(){
     return(
-        <Container>
+        <Container fluid className="about-section">
             <Particle />
-            <Row>
-                <Col>
-                    <h1 style={{margin:"300px", color:"white"}}>This page is currently under construction.</h1>
+            <Row style={{ justifyContent: "center", padding: "10px" }}>
+                <Col
+                    md={7}
+                    style={{
+                      justifyContent: "center",
+                      paddingTop: "30px",
+                      paddingBottom: "50px",
+                    }}
+                >
+                    
                 </Col>
             </Row>
+
+            <h1 className="project-heading">
+                Professional <strong className="purple">Skillset </strong>
+                </h1>
+
+            <Techstack />
         </Container>
     )
 }
