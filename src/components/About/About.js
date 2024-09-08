@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./TechStack";
+import Toolstack from "./ToolStack";
 function About(){
     return(
         <Container fluid className="about-section">
@@ -24,6 +25,11 @@ function About(){
                 </h1>
 
             <Techstack />
+
+            <h1 className="project-heading">
+                <strong className="purple">Tools</strong> I use
+            </h1>
+            <Toolstack />
         </Container>
     )
 }
