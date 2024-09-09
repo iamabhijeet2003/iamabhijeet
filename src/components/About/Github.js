@@ -17,6 +17,12 @@ function Github() {
         theme={customTheme}
         fontSize={16}
       />
+      <div className="purple my-3">
+        <a href="https://git.io/streak-stats">
+          <img src="https://github-readme-streak-stats.herokuapp.com?user=iamabhijeet2003&theme=cobalt&border_radius=6.1&border=C770F0&card_width=501&stroke=C770F0" className="img-fluid" alt="GitHub Streak" />
+        </a> 
+      </div>
+       
     </Row>
   );
 }
